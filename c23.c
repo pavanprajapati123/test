@@ -10,7 +10,7 @@ int main(){
         next=t1+t2;
         t1=t2;
         t2=next;
-    }
+    } return 0;
     ///////////////new code
     for (int i=0;i<=5; i++){
     printf("%d",i);
