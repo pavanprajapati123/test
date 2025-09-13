@@ -15,24 +15,32 @@
 //     t1.show();
 //     t2.show();
 //   return 0;
+// #include<iostream>
+// using namespace std;
+// class outer{
+//     public:
+//     class inner{
+//         public:
+//         void display(){
+//             cout<<"inner class"<<endl;
+
+//         }
+//     };
+// };
+
 #include<iostream>
 using namespace std;
-class outer{
+int main{
+class my class{
     public:
-    class inner{
-        public:
-        void display(){
-            cout<<"inner class"<<endl;
-
-        }
-    };
+    void mymethod();
+}
 };
-
-int main()
-{
- outer::inner c2;
- c2.display();
+void myclass::my method(){
+    cout<<"hello world"
+}
+int main(){
+    myclass my object;
+    myobj.mymethod();
     return 0;
-
-
 }
