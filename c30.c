@@ -1,6 +1,6 @@
 
 // #include<stdio.h>
-// int main() {
+// int main () {
 //     for(int i=0; i<4; i++){
 
 //        for(int j=0; j<=i; j++){
@@ -17,11 +17,16 @@
 //        } for(int l=3; l>i; l--){
 //               printf(" ");
 //          } 
-//               printf("*");
-//        }
-//          printf("\n");
+//              // printf("*");
+//               printf ("\n");
 
-//     }
+//        }
+         
+//     return 0;
+
+// } 
+
+
   
 
         
@@ -39,7 +44,10 @@
 //         }
 //         printf("\n");
 //     }
-// }
+//  }
+
+
+ /////// 
 #include<stdio.h>
 int main(){
     int n;

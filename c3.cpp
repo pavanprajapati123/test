@@ -30,17 +30,17 @@
 
 #include<iostream>
 using namespace std;
-int main{
-class my class{
+int main(){
+class myclass{
     public:
     void mymethod();
 }
 };
-void myclass::my method(){
-    cout<<"hello world"
+void myclass :: mymethod(){
+    cout<<"hello world";
 }
 int main(){
-    myclass my object;
+    myclass myobj;
     myobj.mymethod();
     return 0;
 }
