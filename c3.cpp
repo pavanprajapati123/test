@@ -30,17 +30,29 @@
 
 #include<iostream>
 using namespace std;
-int main(){
-class myclass{
+
+class car{
     public:
-    void mymethod();
-}
+    string brand;
+    string model;
+    car(){
+        brand ="unknown";
+        model="unknown";
+    }
+    car (string b,string m){
+        brand=b;
+        model=m;
+    }
 };
-void myclass :: mymethod(){
-    cout<<"hello world";
-}
+
+
+
 int main(){
-    myclass myobj;
-    myobj.mymethod();
+    car car1;
+    car car2("BMW","X5");
+   car car3("ford","mustang");
+    cout<<"car1:"<<car1.brand<<" "<<car1.model<<"\n";
+    cout<<"car2:"<<car2.brand<<" "<<car1.model<<"\n";
+    cout<<"car2:"<<car2.brand<<" "<<car1.model<<"\n";
     return 0;
 }
