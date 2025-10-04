@@ -1,40 +1,70 @@
-#include <iostream>
-#include <iomanip>
-using namespace std;
-
-int main() {
-    int n;
-    cout << "Kitne countries ka data lena hai? : ";
-    cin >> n;
-
-    string country[n];
-    double emission[n], total = 0;
-
-    cout << "\nCosmic Carbon Tracker (Global Share %)\n";
-    cout << "-------------------------------------\n";
-
-    // User input
-    for (int i = 0; i < n; i++) {
-        cout << "Country " << i+1 << " ka naam dijiye: ";
-        cin >> country[i];
-        cout << country[i] << " ka CO2 emission (in billion tons) dijiye: ";
-        cin >> emission[i];
-        total += emission[i];
+#include<stdio.h>
+int main(){
+ int i,j,n;
+ n=5;
+ for(i=0; i<n;i++){
+    for(j=0;j<i;j++){
+        printf(" ");
+    for(j=1;j<n;j++){
+    printf("*");
     }
+    printf("*");
+    printf("\n");
+ }
+ 
+}
 
-    // Output
-    cout << "\n🌎 Global CO2 Emission = " << total << " billion tons\n\n";
-    cout << left << setw(15) << "Country" 
-         << setw(20) << "Emission (Bt)" 
-         << "Share (%)\n";
-    cout << "----------------------------------------------------\n";
+return 0;
+}
+////
+#include<stdio.h>
+int main(){
+int arr[5]={1,2,3,4,5};
+int *p=arr;
+for(int i=0;i<5;i++){
+    printf("%d ",*(p+i));
+}
+}
+#include<stdio.h>
+int main(){
+    int a=5;
+    int b=10;
+    int *p1=&a;
+    int *p2=&b;
+    int temp=*p1;
+    printf("before swap a=%d b=%d\n",a,b);
+    *p1=*p2;
+    *p2=temp;
+    printf("after swap a=%d b=%d\n",a,b);
+    return 0;
+}
+#include<stdio.h>
+int swap(int *x, int *y){
+    int temp=*x;
+    *x=*y;
+    *y=temp;
+    
+}
+int main(){
+    int a=5;
+    int b=10;
+    swap(&a,&b);
+  printf("a=%d b=%d",a,b);
+  return 0;
 
-    for (int i = 0; i < n; i++) {
-        double share = (emission[i] / total) * 100;
-        cout << left << setw(15) << country[i] 
-             << setw(20) << emission[i] 
-             << fixed << setprecision(2) << share << "%\n";
+
+}
+#include<stdio.h>
+int main(){
+    int arr1[5]={1,2,3,4,5};
+    int arr2[5]={1,2,3,4,5};
+    int *p1=arr1;
+    int *p2=arr2;
+    for(int i=0;i<5;i++){
+        printf("%d ",*(p1+i));
     }
-
+    for(int i=0;i<5;i++){
+        printf("%d ",*(p2+i));
+    }
     return 0;
 }
